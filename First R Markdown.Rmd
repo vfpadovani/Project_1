@@ -1,32 +1,89 @@
 ---
 title: "First R Markdown"
 author: "Vinicius Padovani"
-date: "14/01/2020"
+date: "15/01/2020"
 output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
 # R Markdown Test edit
 
-## R Markdown
+## Cheat Sheet Guide
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Built with
+`r getRversion()`
 
-### Pipipi popopo
+```{r echo=TRUE}
+getRversion()
+```
 
-- bullet  
-- list  
-- test  
-
-
-```{r test}
-summary(WorldPhones)
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+New paragraph  
+`code`  
+sub^{~4~}  
+sup^{4}  
+~~strike~~  
+esc \* \_ \\  
+en --  
+em ---  
+$A = \pi*r^{2}$  
+$$E = mc^{2}$$  
+> quote  
+blablabla  
+
+# Header 1 {#anchor}  
+### Header 2 {#css_id}  
+### Header3 {.css_class}  
+
+
+<!--comment-->  
+
+\ texbf{Tex ignored in HTML}  
+<em>HTML ignored in pdfs<em>  
+
+<www.youtube.com>  
+
+[link](www.youtube.com)  
+
+jump to [Header 1](#anchor)
+
+![caption] (image)
+
+- bullet list 1     
+>- bulet 2   
+
+*Unordered list
+    + sub-item 1
+        - sub-sub-item 1
+        
+
+1. ordered list
+    i) sub_1
+        I. sub_sub_1
+        
+
+(@) Continuous list
+(@) keeps going  
+
+:   Defitinition  
+
+|TABLE 1|BLABLA|
+|------:|:----:|
+|VALUE 1|VALUE 2|
+
+Footnote [^1]
+
+[^1]: Footnote
+
+
+
 
 ```{r cars}
 summary(cars)
@@ -34,10 +91,9 @@ summary(cars)
 
 ## Including Plots
 
-You can also embed plots, for example:
-
 ```{r pressure, echo=FALSE}
 plot(pressure)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Horizontal rule:
+***
