@@ -48,9 +48,9 @@ blablabla
 \ texbf{Tex ignored in HTML}  
 <em>HTML ignored in pdfs<em>  
 
-<www.youtube.com>  
+<http://www.youtube.com>  
 
-[link](www.youtube.com)  
+[link](http://www.youtube.com)  
 
 jump to [Header 1](#anchor)
 
